@@ -145,7 +145,7 @@ nav {
     display: flex;
     justify-content: center;
     padding: 50px;
-    background: rgba(0, 0, 0, 0.6);  /* Fond noir légèrement transparent */
+    /*background: rgba(64, 61, 61, 0.6);  /* Fond noir légèrement transparent */
     min-height: 100vh;
 }
 

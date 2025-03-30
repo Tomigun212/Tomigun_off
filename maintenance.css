@@ -1,0 +1,88 @@
+/* Réinitialisation */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+/* Fond galaxie */
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+       background: url('jpg.png') no-repeat center center/cover;
+    filter: brightness(1.1) contrast(1.2) saturate(1.1);
+    z-index: -2;
+}
+
+/* Canvas pour la traînée lumineuse */
+#trails {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+    mix-blend-mode: screen;
+}
+
+/* Conteneur principal */
+.maintenance-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+/* Texte lumineux */
+.glow-text {
+    font-size: 2.5em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(128, 0, 255, 0.7), 0 0 30px rgba(255, 0, 255, 0.8);
+}
+
+/* Animation de la roue de chargement */
+.loader {
+    border: 5px solid rgba(255, 255, 255, 0.2);
+    border-top: 5px solid #ff00ff;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+    animation: spin 1.5s linear infinite;
+}
+
+/* Bouton Réessayer */
+.btn {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: linear-gradient(90deg, #ff9800, #ff5722);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 152, 0, 0.7);
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(255, 152, 0, 1);
+}
+
+/* Animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
