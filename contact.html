@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact-style.css"> <!-- Lien vers le fichier CSS de la page Contact -->
+</head>
+<body>
+    <div class="background"></div>
+    <canvas id="trails"></canvas>
+
+    <header>
+        <h1 class="glow-text">Contactez-moi</h1>
+        <nav>
+            <a href="index.html" class="nav-link">Accueil</a>
+            <a href="mes-reseaux.html" class="nav-link">Mes Réseaux</a>
+            <a href="contact.html" class="nav-link active">Contact</a>
+        </nav>
+    </header>
+
+    <main class="contact-container">
+        <section class="contact-form-container">
+            <h2 class="glow-text">Envoyez-moi un message</h2>
+            <form id="contactForm">
+                <!-- Champ honeypot caché -->
+                <div class="form-field" style="display:none;">
+                    <label for="honeypot">Ne remplissez pas ce champ</label>
+                    <input type="text" id="honeypot" name="honeypot" placeholder="Ne remplissez pas ce champ">
+                </div>
+
+                <div class="form-field">
+                    <label for="name">Nom :</label>
+                    <input type="text" id="name" name="name" placeholder="Votre nom" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="email">Email :</label>
+                    <input type="email" id="email" name="email" placeholder="Votre email" required>
+                </div>
+
+                <div class="form-field">
+                    <label for="message">Message :</label>
+                    <textarea id="message" name="message" rows="6" placeholder="Votre message" required></textarea>
+                </div>
+
+                <button type="submit" class="btn submit-btn">Envoyer</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="contact.js"></script> <!-- Inclure le script JavaScript -->
+</body>
+</html>
