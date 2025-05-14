@@ -1,6 +1,6 @@
 <?php
-$utilisateur_correct = "admin";
-$mot_de_passe_correct = "supersecret";
+$utilisateur_correct = "Brute";
+$mot_de_passe_correct = "qwerty";
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $user = $_POST["username"] ?? "";
