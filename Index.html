@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mon App École Pro</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" />
+  <style>
+    body { background-color: #f3f3f3; }
+    .header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      position: relative;
+    }
+
+    .header a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.header a:hover {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.header a:active {
+  background-color: #ccc;
+  color: #000;
+}
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+      position: absolute;
+      left: 20px;
+      top: 25px;
+    }
+    .menu-popup {
+      position: absolute;
+      top: 60px;
+      left: 20px;
+      background-color: white;
+      border: 1px solid #ccc;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 10px;
+      display: none;
+      z-index: 999;
+      border-radius: 6px;
+    }
+    .float-button {
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      background-color: #4CAF50;
+      color: white;
+      font-size: 30px;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      line-height: 60px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .done { background-color: #d4edda !important; }
+    .in-progress { background-color: #fff3cd !important; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 class="text-center">Bienvenue sur <strong>School Manage </strong> !</h1>
+    <div class="text-center">
+<a href="devoir.html">Mes Devoirs</a>
+<a href="notes.html">Mes Notes</a>
+<a href="emploi.html">Mon Emploi du Temps</a>
+<a href="chat.html">Chat</a>
+    </div>
+</body>
+</html>
